@@ -1,12 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="DSA Rhythm - Master Data Structures. No shortcuts. No fluff. Pure discipline.">
+  <title>DSA Rhythm | Grind. Build. Master.</title>
+
+  <!-- Favicon - sharp, brutal -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23ff3300'/%3E%3Ctext x='50' y='68' text-anchor='middle' fill='white' font-size='48' font-weight='900' font-family='monospace'%3ED%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
-    
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">[ DSA_RHYTHM ]</a>
+
+      <ul class="nav-links">
+        <li><a href="#">[ DASH ]</a></li>
+        <li><a href="#">[ QUESTS ]</a></li>
+        <li><a href="#">[ ROADMAP ]</a></li>
+        <li><a href="#">[ LEARN ]</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">
+          <span id="themeIcon"></span>
+          <span id="themeText">LIGHT</span>
+        </button>
+        <button class="btn-secondary" style="padding: 8px 20px;">[ LOGIN ]</button>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- Mobile Menu Panel -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-logo">[ DSA ]</span>
+      <button class="close-menu-btn" id="closeMenuBtn">✕</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#">[ DASHBOARD ]</a></li>
+      <li><a href="#">[ QUESTS ]</a></li>
+      <li><a href="#">[ ROADMAP ]</a></li>
+      <li><a href="#">[ LEARN ]</a></li>
+    </ul>
+    <div class="mobile-actions">
+      <button class="theme-toggle" id="mobileThemeToggle">
+        <span id="mobileThemeIcon"></span>
+        <span id="mobileThemeText">LIGHT</span>
+      </button>
+      <button class="btn-secondary">[ LOGIN ]</button>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <div>
+          <span class="hero-badge">[ NO SHORTCUTS. NO FLUFF. ]</span>
+          <h1>FLOW THROUGH DSA.<br>OR GET LEFT BEHIND.</h1>
+          <p class="hero-description">
+            Daily quests. Structured paths. Measurable growth. This isn't for slackers — it's for those who grind.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary">[ START GRINDING ]</button>
+            <button class="btn-secondary">[ WATCH DEMO ]</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="visual-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="square" stroke-linejoin="miter">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+            </div>
+            <div class="visual-info">
+              <div class="visual-title">PROGRESS</div>
+              <div class="visual-sub">Problems solved today</div>
+            </div>
+            <div class="visual-value">3/5</div>
+          </div>
+          <div class="visual-card">
+            <div class="visual-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="square" stroke-linejoin="miter">
+                <path d="M13 2L3 14h6l-2 8 10-12h-6l2-8z" />
+              </svg>
+            </div>
+            <div class="visual-info">
+              <div class="visual-title">NEXT TARGET</div>
+              <div class="visual-sub">Graph traversal mastery</div>
+            </div>
+            <div class="visual-value">READY</div>
+          </div>
+          <div class="visual-card">
+            <div class="visual-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="square" stroke-linejoin="miter">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+              </svg>
+            </div>
+            <div class="visual-info">
+              <div class="visual-title">STREAK</div>
+              <div class="visual-sub">Consistency is key</div>
+            </div>
+            <div class="visual-value">12 DAYS</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">120+</div>
+          <div class="stat-label">PROBLEMS CRUSHED</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">30 DAYS</div>
+          <div class="stat-label">STRUCTURED PATH</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1,000+</div>
+          <div class="stat-label">GRINDERS ACTIVE</div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <h2>[ BUILD. REPEAT. MASTER. ]</h2>
+        <p>No hand-holding. Just results.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="square" stroke-linejoin="miter">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h3>DAILY QUESTS</h3>
+          <p>No decision fatigue. Show up. Solve. Repeat. Every day counts.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="square" stroke-linejoin="miter">
+              <path d="M21 10.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h10.5" />
+              <polyline points="16 2 22 8 16 8" />
+              <line x1="10" y1="14" x2="21" y2="14" />
+              <line x1="10" y1="18" x2="18" y2="18" />
+            </svg>
+          </div>
+          <h3>CLEAR ROADMAP</h3>
+          <p>From arrays to DP. Know your path. Execute with precision.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="square" stroke-linejoin="miter">
+              <path d="M21 16v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2" />
+              <path d="M7 10l5 5 5-5" />
+              <path d="M12 15V3" />
+            </svg>
+          </div>
+          <h3>TRACK PROGRESS</h3>
+          <p>Streaks. Analytics. No excuses. See your growth in numbers.</p>
+        </div>
+      </div>
+      <div class="roadmap">
+        <div class="roadmap-header">
+          <h3>[ 30-DAY ASSAULT PLAN ]</h3>
+          <a href="#" class="roadmap-link">[ FULL ROADMAP → ]</a>
+        </div>
+        <div class="roadmap-steps">
+          <div class="step">
+            <div class="step-week">WEEK 01-02</div>
+            <div class="step-title">ARRAYS & HASHING</div>
+            <div class="step-desc">Two pointers • Sliding window • Prefix sums</div>
+          </div>
+          <div class="step">
+            <div class="step-week">WEEK 03-04</div>
+            <div class="step-title">LINKED LISTS</div>
+            <div class="step-desc">Recursion • Fast & slow pointers</div>
+          </div>
+          <div class="step">
+            <div class="step-week">WEEK 05-06</div>
+            <div class="step-title">TREES & GRAPHS</div>
+            <div class="step-desc">BFS • DFS • Topological sort</div>
+          </div>
+          <div class="step">
+            <div class="step-week">WEEK 07-08</div>
+            <div class="step-title">DYNAMIC PROGRAMMING</div>
+            <div class="step-desc">Memoization • Tabulation • Patterns</div>
+          </div>
+        </div>
+      </div>
+      <div class="cta">
+        <h2>[ STOP WISHING. START DOING. ]</h2>
+        <p>Join the grind. 1000+ developers are leveling up. What's your excuse?</p>
+        <button class="btn-primary">[ START NOW ]</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 DSA RHYTHM — BUILT FOR THOSE WHO GRIND. NO EXCUSES. NO SHORTCUTS.</p>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/main.js"></script>
+
 </body>
+
 </html>
